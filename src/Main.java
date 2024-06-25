@@ -7,12 +7,13 @@ public class Main {
         // Create an instance of StandardPBEStringEncryptor
         StandardPBEStringEncryptor encryptor = new StandardPBEStringEncryptor();
 
-        // Set the password
+        // Set the password - application specific password
         encryptor.setPassword("password");
 
-        // Set the algorithm
+        // Set the algorithm - see EncryptionAlgorithm enum class
         encryptor.setAlgorithm("algorithm");
 
+        // Secret to encrypt or decrypt
         String secret = "secret";
 
         Scanner scanner = new Scanner(System.in);
